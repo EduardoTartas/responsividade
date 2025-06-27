@@ -1,0 +1,17 @@
+.menu{
+    list-style: none;
+    background-color: #393e46e3;
+    padding: 1px;
+}
+
+.menu li img{
+    margin-left: 16px;
+    width: 30px;
+    height: 30px;
+    filter: invert(0.75);
+}
+
+.menu li a{
+    text-decoration: none;
+    color:whitesmoke;
+}
