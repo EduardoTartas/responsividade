@@ -1,4 +1,4 @@
-import './assets/styles/index.css';
+ import './assets/styles/index.css';
 
 const menu = document.querySelector('#menu') as HTMLDivElement;
 
