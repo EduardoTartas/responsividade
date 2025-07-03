@@ -46,3 +46,19 @@
     padding: 16px;
     color: rgb(95, 95, 95);
 }
+
+@media (max-width: 768px) {
+    .footer-links ul{
+        border-left: none;
+        padding-left: 0;
+        padding: 8px 0;
+    }
+
+    .footer-links{
+        flex-wrap: wrap;
+    }
+    
+    .footer-links ul{
+        width: 35%;
+    }
+}
