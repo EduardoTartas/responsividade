@@ -1,7 +1,8 @@
 .menu{
     list-style: none;
-    background-color: #393e46e3;
-    padding: 1px;
+    display: flex;
+    background-color:#002907;
+    padding: 8px;
 }
 
 .menu li img{
@@ -14,4 +15,37 @@
 .menu li a{
     text-decoration: none;
     color:whitesmoke;
+    padding: 0px 10px;
+}
+
+.menu li a:hover{
+    color: #61B069;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .menu li:first-child {
+        display: block;
+    }
+
+    .menu li img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    
+    .menu li a{
+        padding: 6px 5px;
+        display: block;
+        border-bottom: 1px solid #004d0a;
+    }
+
+    .menu li a:hover{
+        background-color: #004d0a;
+    }
 }
