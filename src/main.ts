@@ -1,42 +1,19 @@
 import './assets/styles/index.css';
 
-const menu = document.querySelector('#menu') as HTMLDivElement;
-let isMenuOpen = false;
+const menuToggle = document.querySelector('#menu-toggle') as HTMLButtonElement;
+const menuItems = document.querySelector('#menu-items') as HTMLUListElement;
+const menuIcon = document.querySelector('#menu-icon') as HTMLImageElement;
 
-const menuHtml = `
-  <li><a href="a">Início</a></li>
-  <li><a href="a">Projetos</a></li>
-  <li><a href="a">Quem somos</a></li>
-  <li><a href="a">Contato</a></li>
-`;
-
-const moreIcon = `<li id="more"><img src="./src/assets/images/more.png" alt=""></li>`;
-const closeIcon = `<li id="more"><img src="./src/assets/images/close.png" alt=""></li>`;
-
-function updateMenu() {
-  const mobile = window.innerWidth < 768;
-  
-  if (mobile) {
-    menu.innerHTML = isMenuOpen ? closeIcon + menuHtml : moreIcon;
-  } else {
-    menu.innerHTML = menuHtml;
-    isMenuOpen = false;
-  }
+function toggleMenu(): void {
+  const active = menuItems.classList.toggle('active');
+  menuIcon.src = active ? './src/assets/images/close.png' : './src/assets/images/more.png';
 }
 
-function toggleMenu() {
-  if (window.innerWidth < 768) {
-    isMenuOpen = !isMenuOpen;
-    updateMenu();
-  }
-}
+menuToggle.addEventListener('click', toggleMenu);
 
-updateMenu();
-
-menu.addEventListener('click', (e) => {
-  if ((e.target as HTMLElement).closest('#more')) {
-    toggleMenu();
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    menuItems.classList.remove('active');
+    menuIcon.src = './src/assets/images/more.png';
   }
 });
-
-window.addEventListener('resize', updateMenu);

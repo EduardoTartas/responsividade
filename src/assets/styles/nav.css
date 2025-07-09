@@ -1,51 +1,89 @@
-.menu{
-    list-style: none;
+.menu {
     display: flex;
-    background-color:#002907;
-    padding: 8px;
+    background-color: #205129;
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    align-items: center;
 }
 
-.menu li img{
-    margin-left: 16px;
-    width: 30px;
-    height: 30px;
-    filter: invert(0.75);
+.menu-items {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
 }
 
-.menu li a{
+.menu-items a {
+    color: whitesmoke;
     text-decoration: none;
-    color:whitesmoke;
-    padding: 0px 10px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
 }
 
-.menu li a:hover{
+.menu-items a:hover {
     color: #61B069;
     font-weight: 600;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.menu-toggle img {
+    width: 24px;
+    height: 24px;
+    filter: invert(0.8);
+    transition: filter 0.3s ease;
+}
+
+.menu-toggle img:hover {
+    filter: invert(0.6);
+}
+
 @media (max-width: 768px) {
-    .menu{
+    .menu {
         flex-direction: column;
-        position: relative;
+        padding: 0;
+        align-items: flex-start;
     }
 
-    .menu li:first-child {
-        display: block;
-    }
-
-    .menu li img{
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-    }
-    
-    .menu li a{
-        padding: 6px 5px;
-        display: block;
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        text-align: left;
         border-bottom: 1px solid #004d0a;
+        width: 100%;
     }
 
-    .menu li a:hover{
+    .menu-items {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items a {
+        padding: 20px;
+        border-bottom: 1px solid #004d0a;
+        transition: background-color 0.3s ease;
+        display: block;
+    }
+
+    .menu-items a:hover {
         background-color: #004d0a;
+    }
+
+    .menu-items li:last-child a {
+        border-bottom: none;
     }
 }
