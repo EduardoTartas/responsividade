@@ -1,6 +1,6 @@
 .menu {
     display: flex;
-    background-color: #205129;
+    background: linear-gradient(135deg, #1a9933, #2db83d, #1a8c2e);
     margin: 0;
     padding: 10px 15px;
     list-style: none;
@@ -17,14 +17,17 @@
 }
 
 .menu-items a {
-    color: whitesmoke;
+    color: #f8fff8;
     text-decoration: none;
     padding: 12px 20px;
     transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 500;
 }
 
 .menu-items a:hover {
-    color: #61B069;
+    color: #ffffff;
+    background-color: rgba(125, 216, 127, 0.2);
     font-weight: 600;
 }
 
@@ -36,15 +39,19 @@
     padding: 15px;
 }
 
+.menu-toggle:hover {
+    background-color: rgba(125, 216, 127, 0.15);
+}
+
 .menu-toggle img {
     width: 24px;
     height: 24px;
-    filter: invert(0.8);
+    filter: invert(0.9);
     transition: filter 0.3s ease;
 }
 
 .menu-toggle img:hover {
-    filter: invert(0.6);
+    filter: invert(0.7);
 }
 
 @media (max-width: 768px) {
@@ -52,20 +59,23 @@
         flex-direction: column;
         padding: 0;
         align-items: flex-start;
+        background: linear-gradient(135deg, #1a9933, #2db83d);
     }
 
     .menu-toggle {
         display: flex;
         align-items: center;
-        padding: 10px 30px;
+        padding: 12px 30px;
         text-align: left;
-        border-bottom: 1px solid #004d0a;
+        border-bottom: 1px solid rgba(125, 216, 127, 0.3);
         width: 100%;
     }
 
     .menu-items {
         display: none;
         flex-direction: column;
+        width: 100%;
+        background: linear-gradient(180deg, #2db83d, #1a8c2e);
     }
 
     .menu-items.active {
@@ -73,14 +83,17 @@
     }
 
     .menu-items a {
-        padding: 20px;
-        border-bottom: 1px solid #004d0a;
-        transition: background-color 0.3s ease;
+        padding: 18px 30px;
+        border-bottom: 1px solid rgba(125, 216, 127, 0.2);
+        transition: all 0.3s ease;
         display: block;
+        width: 100%;
+        color: #f8fff8;
     }
 
     .menu-items a:hover {
-        background-color: #004d0a;
+        background: linear-gradient(90deg, rgba(125, 216, 127, 0.25), rgba(125, 216, 127, 0.15));
+        color: #ffffff;
     }
 
     .menu-items li:last-child a {

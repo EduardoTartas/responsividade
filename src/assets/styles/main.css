@@ -30,8 +30,9 @@ main {
 }
 
 .noticia-destaque img {
+    padding: 12px;
     width: 100%;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -80,42 +81,6 @@ main {
     line-height: 1.4;
 }
 
-.campi-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.campus-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.campus-card:hover {
-    transform: translateY(-5px);
-}
-
-.campus-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.campus-card h3 {
-    color: #065E16;
-    padding: 1rem 1rem 0.5rem;
-    font-size: 1.1rem;
-}
-
-.campus-card p {
-    color: #666;
-    padding: 0 1rem 1rem;
-    line-height: 1.4;
-}
-
 .acesso-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -154,10 +119,6 @@ main {
     }
     
     .noticias-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .campi-container {
         grid-template-columns: 1fr;
     }
     

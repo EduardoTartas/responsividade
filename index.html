@@ -27,11 +27,35 @@
       </div>
     </nav>
     <main>
+      <section class="acesso-rapido">
+        <h2>Acesso Rápido</h2>
+        <div class="acesso-container">
+          <a href="#" class="acesso-item">
+            <span class="icone">📚</span>
+            <h4>Portal do Aluno</h4>
+          </a>
+          
+          <a href="#" class="acesso-item">
+            <span class="icone">👨‍🏫</span>
+            <h4>Portal do Professor</h4>
+          </a>
+          
+          <a href="#" class="acesso-item">
+            <span class="icone">📋</span>
+            <h4>Processo Seletivo</h4>
+          </a>
+          
+          <a href="#" class="acesso-item">
+            <span class="icone">📖</span>
+            <h4>Biblioteca</h4>
+          </a>
+        </div>
+      </section>
       <section class="noticias">
         <h2>Notícias</h2>
         <div class="noticias-container">
           <article class="noticia-destaque">
-            <img src="./src/assets/images/noticia-principal.jpg" alt="PSS/IFRO 2025/2">
+            <img src="./src/assets/images/Proc_Selet_Simplif_20252_ResultPrelim_feed.jpg" alt="PSS/IFRO 2025/2">
             <div class="noticia-conteudo">
               <h3>PSS/IFRO 2025/2: recursos contra o Resultado Preliminar podem...</h3>
               <p>Confira os procedimentos para apresentar recursos contra o resultado preliminar do processo seletivo.</p>
@@ -62,49 +86,71 @@
 
       <section class="campi">
         <h2>Campi</h2>
-        <div class="campi-container">
-          <div class="campus-card">
-            <img src="./src/assets/images/campus-1.jpg" alt="Campus IFRO">
-            <h3>Campus Porto Velho Calama</h3>
-            <p>Cursos técnicos e superiores em diversas áreas do conhecimento.</p>
+        <div class="carousel-container">
+          <button class="carousel-btn prev-btn" id="prevBtn">
+            <span>‹</span>
+          </button>
+          <div class="carousel-wrapper">
+            <div class="campi-container" id="campusCarousel">
+              <div class="campus-card">
+                <h3>Campus Ariquemes</h3>
+                <p>Formação profissional de qualidade para a região norte de Rondônia.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Buritis</h3>
+                <p>Educação técnica integrada ao desenvolvimento regional sustentável.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Cacoal</h3>
+                <p>Cursos técnicos e superiores voltados para o agronegócio e tecnologia.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Colorado do Oeste</h3>
+                <p>Formação técnica e tecnológica para o desenvolvimento local.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Guajará-Mirim</h3>
+                <p>Educação profissional na região de fronteira Brasil-Bolívia.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Jaru</h3>
+                <p>Cursos técnicos e superiores em diversas áreas do conhecimento.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Ji-Paraná</h3>
+                <p>Educação técnica e tecnológica integrada ao desenvolvimento local.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus São Miguel do Guaporé</h3>
+                <p>Formação profissional voltada para o desenvolvimento rural.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Porto Velho Zona Norte</h3>
+                <p>Cursos técnicos e superiores na capital do estado.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Porto Velho Calama</h3>
+                <p>Cursos técnicos e superiores em diversas áreas do conhecimento.</p>
+              </div>
+              
+              <div class="campus-card">
+                <h3>Campus Vilhena</h3>
+                <p>Educação profissional no cone sul de Rondônia.</p>
+              </div>
+            </div>
           </div>
-          
-          <div class="campus-card">
-            <img src="./src/assets/images/campus-2.jpg" alt="Campus IFRO">
-            <h3>Campus Ariquemes</h3>
-            <p>Formação profissional de qualidade para a região norte de Rondônia.</p>
-          </div>
-          
-          <div class="campus-card">
-            <img src="./src/assets/images/campus-3.jpg" alt="Campus IFRO">
-            <h3>Campus Ji-Paraná</h3>
-            <p>Educação técnica e tecnológica integrada ao desenvolvimento local.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="acesso-rapido">
-        <h2>Acesso Rápido</h2>
-        <div class="acesso-container">
-          <a href="#" class="acesso-item">
-            <span class="icone">📚</span>
-            <h4>Portal do Aluno</h4>
-          </a>
-          
-          <a href="#" class="acesso-item">
-            <span class="icone">👨‍🏫</span>
-            <h4>Portal do Professor</h4>
-          </a>
-          
-          <a href="#" class="acesso-item">
-            <span class="icone">📋</span>
-            <h4>Processo Seletivo</h4>
-          </a>
-          
-          <a href="#" class="acesso-item">
-            <span class="icone">📖</span>
-            <h4>Biblioteca</h4>
-          </a>
+          <button class="carousel-btn next-btn" id="nextBtn">
+            <span>›</span>
+          </button>
         </div>
       </section>
     </main>

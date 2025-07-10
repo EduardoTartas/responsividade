@@ -1,19 +1,33 @@
 header {
-    background: linear-gradient(135deg, #065E16, #137F27);
-    padding: 1rem 30px;
+    background: linear-gradient(135deg, #0a4d12, #137F27, #1a9933);
+    padding: 1.5rem 30px;
     color: white;
 }
 
 header span,
 header p {
     margin: 0;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 header span {
     display: block;
+    font-weight: 500;
+}
+
+header span:first-child {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #7dd87f;
+}
+
+header span:last-child {
+    font-size: 0.9rem;
+    color: #b8e6b8;
 }
 
 header p b {
-    font-size: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
 }
