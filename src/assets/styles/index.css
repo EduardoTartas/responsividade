@@ -1,6 +1,9 @@
-@import url(global.css);
-@import url(nav.css);
-@import url(footer.css);
-@import url(main.css);
-@import url(header.css);
-@import url(carousel.css);
+/* Imports CSS - Ordem: Global → Layout → Seções → Componentes */
+@import url('./global.css');
+@import url('./main.css');
+@import url('./header.css');
+@import url('./nav.css');
+@import url('./acesso-rapido.css');
+@import url('./campi.css');
+@import url('./noticias.css');
+@import url('./footer.css');

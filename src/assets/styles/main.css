@@ -1,128 +1,13 @@
+/* Estilos gerais do layout principal */
 main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.noticias, .campi, .acesso-rapido {
-    margin-bottom: 3rem;
-}
-
-.noticias h2, .campi h2, .acesso-rapido h2 {
-    color: #065E16;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 3px solid #61B069;
-    padding-bottom: 0.5rem;
-}
-
-.noticias-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.noticia-destaque {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.noticia-destaque img {
-    padding: 12px;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.noticia-conteudo {
-    padding: 1.5rem;
-}
-
-.noticia-conteudo h3 {
-    color: #065E16;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.noticias-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.noticia-item {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    border-left: 4px solid #61B069;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.categoria {
-    background: #61B069;
-    color: white;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.noticia-item h4 {
-    color: #065E16;
-    font-size: 1rem;
-    margin: 0.5rem 0;
-}
-
-.noticia-item p {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.acesso-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-.acesso-item {
-    background: linear-gradient(135deg, #065E16, #137F27);
-    color: white;
-    text-decoration: none;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.acesso-item:hover {
-    transform: translateY(-3px);
-}
-
-.icone {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.acesso-item h4 {
-    color: white;
-    margin: 0;
-    font-size: 1rem;
-}
-
+/* Responsividade geral */
 @media (max-width: 768px) {
     main {
         padding: 1rem;
-    }
-    
-    .noticias-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .acesso-container {
-        grid-template-columns: repeat(2, 1fr);
     }
 }

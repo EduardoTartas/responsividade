@@ -1,0 +1,50 @@
+.acesso-rapido {
+    margin-bottom: 3rem;
+}
+
+.acesso-rapido h2 {
+    color: #065E16;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #61B069;
+    padding-bottom: 0.5rem;
+}
+
+.acesso-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.acesso-item {
+    background: linear-gradient(135deg, #065E16, #137F27);
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.acesso-item:hover {
+    transform: translateY(-3px);
+}
+
+.icone {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.acesso-item h4 {
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .acesso-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

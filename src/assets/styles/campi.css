@@ -1,0 +1,105 @@
+.campi {
+    margin-bottom: 2rem;
+}
+
+.campi h2 {
+    color: #065E16;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.campi-lista-pequena {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.campus-item-pequeno {
+    background: white;
+    border: 2px solid #065E16;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-item-pequeno:hover {
+    background: linear-gradient(135deg, #065E16, #137F27);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-color: #137F27;
+}
+
+.campus-item-pequeno:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.campus-item-pequeno:hover::before {
+    left: 100%;
+}
+
+.campus-item-pequeno h4 {
+    margin: 0;
+    color: #065E16;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.campus-item-pequeno:hover h4 {
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .campi-lista-pequena {
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .campus-item-pequeno {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+        flex: 1 1 auto;
+        min-width: fit-content;
+    }
+    
+    .campus-item-pequeno h4 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .campi-lista-pequena {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    
+    .campus-item-pequeno {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
