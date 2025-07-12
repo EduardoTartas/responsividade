@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/styles/index.css">
     <title>Menu responsivel</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
       </div>
     </nav>
     <main>
-      <section class="acesso-rapido">
+      <div class="acesso-rapido">
         <h2>Acesso Rápido</h2>
         <div class="acesso-container">
           <a href="#" class="acesso-item">
@@ -50,109 +51,80 @@
             <h4>Biblioteca</h4>
           </a>
         </div>
-      </section>
-      <section class="noticias">
+      </div>
+      
+      <div class="campi">
+        <h2>Nossos Campi</h2>
+        <div class="campi-lista-pequena">
+          <div class="campus-item-pequeno">
+            <h4>Ariquemes</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Buritis</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Cacoal</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Colorado do Oeste</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Guajará-Mirim</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Jaru</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Ji-Paraná</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>São Miguel do Guaporé</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Porto Velho Zona Norte</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Porto Velho Calama</h4>
+          </div>
+          <div class="campus-item-pequeno">
+            <h4>Vilhena</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="noticias">
         <h2>Notícias</h2>
         <div class="noticias-container">
-          <article class="noticia-destaque">
+          <div class="noticia-destaque">
             <img src="./src/assets/images/Proc_Selet_Simplif_20252_ResultPrelim_feed.jpg" alt="PSS/IFRO 2025/2">
             <div class="noticia-conteudo">
               <h3>PSS/IFRO 2025/2: recursos contra o Resultado Preliminar podem...</h3>
               <p>Confira os procedimentos para apresentar recursos contra o resultado preliminar do processo seletivo.</p>
             </div>
-          </article>
+          </div>
           
           <div class="noticias-lista">
-            <article class="noticia-item">
+            <div class="noticia-item">
               <span class="categoria">SELEÇÃO INTERNA</span>
               <h4>Chamada abre seleção para representação de Rondônia na Mostra Tecnológica dentro do</h4>
               <p>Até o próximo dia 14 de julho poderão ser submetidas propostas para a representação do Instituto Federal de Educação, Ciência e Tecnologia...</p>
-            </article>
+            </div>
             
-            <article class="noticia-item">
+            <div class="noticia-item">
               <span class="categoria">EXTENSÃO</span>
               <h4>Mulher de Fibra/IFRO seleciona alunas para cursos gratuitos de Operadora de</h4>
               <p>A Pró-Reitoria de Extensão do Instituto Federal de Educação, Ciência e Tecnologia de Rondônia (Proex/IFRO) está com inscrições abertas...</p>
-            </article>
+            </div>
             
-            <article class="noticia-item">
+            <div class="noticia-item">
               <span class="categoria">AUDIT</span>
               <h4>Auditoria Interna de processo seletivo discente avalia governança, controles e gestão</h4>
               <p>O Instituto Federal de Educação, Ciência e Tecnologia de Rondônia (IFRO) realizou auditoria sobre o processo seletivo de discentes (cursos...</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="campi">
-        <h2>Campi</h2>
-        <div class="carousel-container">
-          <button class="carousel-btn prev-btn" id="prevBtn">
-            <span>‹</span>
-          </button>
-          <div class="carousel-wrapper">
-            <div class="campi-container" id="campusCarousel">
-              <div class="campus-card">
-                <h3>Campus Ariquemes</h3>
-                <p>Formação profissional de qualidade para a região norte de Rondônia.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Buritis</h3>
-                <p>Educação técnica integrada ao desenvolvimento regional sustentável.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Cacoal</h3>
-                <p>Cursos técnicos e superiores voltados para o agronegócio e tecnologia.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Colorado do Oeste</h3>
-                <p>Formação técnica e tecnológica para o desenvolvimento local.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Guajará-Mirim</h3>
-                <p>Educação profissional na região de fronteira Brasil-Bolívia.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Jaru</h3>
-                <p>Cursos técnicos e superiores em diversas áreas do conhecimento.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Ji-Paraná</h3>
-                <p>Educação técnica e tecnológica integrada ao desenvolvimento local.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus São Miguel do Guaporé</h3>
-                <p>Formação profissional voltada para o desenvolvimento rural.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Porto Velho Zona Norte</h3>
-                <p>Cursos técnicos e superiores na capital do estado.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Porto Velho Calama</h3>
-                <p>Cursos técnicos e superiores em diversas áreas do conhecimento.</p>
-              </div>
-              
-              <div class="campus-card">
-                <h3>Campus Vilhena</h3>
-                <p>Educação profissional no cone sul de Rondônia.</p>
-              </div>
             </div>
           </div>
-          <button class="carousel-btn next-btn" id="nextBtn">
-            <span>›</span>
-          </button>
         </div>
-      </section>
+      </div>
+
     </main>
     <footer>
       <div class="footer-links">
