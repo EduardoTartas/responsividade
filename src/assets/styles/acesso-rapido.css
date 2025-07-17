@@ -30,12 +30,6 @@
     transform: translateY(-3px);
 }
 
-.icone {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
 .acesso-item h4 {
     color: white;
     margin: 0;
