@@ -70,7 +70,6 @@
     color: white;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .campi-lista-pequena {
         flex-direction: row;

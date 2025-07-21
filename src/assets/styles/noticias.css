@@ -75,7 +75,6 @@
     line-height: 1.4;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .noticias-container {
         grid-template-columns: 1fr;

@@ -4,7 +4,6 @@ main {
     margin: 0 auto;
 }
 
-/* Responsividade geral */
 @media (max-width: 768px) {
     main {
         padding: 1rem;

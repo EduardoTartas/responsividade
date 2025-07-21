@@ -1,4 +1,3 @@
-/* Imports CSS - Ordem: Global → Layout → Seções → Componentes */
 @import url('./global.css');
 @import url('./main.css');
 @import url('./header.css');
@@ -7,4 +6,5 @@
 @import url('./campi.css');
 @import url('./noticias.css');
 @import url('./footer.css');
-@import url('./galeria.css');
+@import url('./vozes.css');
+@import url('./comunicados.css');

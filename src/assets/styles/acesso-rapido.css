@@ -36,7 +36,6 @@
     font-size: 1rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .acesso-container {
         grid-template-columns: repeat(2, 1fr);
