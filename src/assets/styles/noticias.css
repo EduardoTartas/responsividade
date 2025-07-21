@@ -49,7 +49,7 @@
 .noticia-item {
     background: white;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
     border-left: 4px solid #61B069;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
